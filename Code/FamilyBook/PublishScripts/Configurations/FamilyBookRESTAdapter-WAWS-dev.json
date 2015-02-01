@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "FamilyBookRESTAdapter",
+            "location": "South Central US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "FamilyBookRESTAdapter_db",
+                "serverName": "d2h2lqfhye",
+                "user": "jstuparitz",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "South Central US"
+            }
+        ]
+    }
+}

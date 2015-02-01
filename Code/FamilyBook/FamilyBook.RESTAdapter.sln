@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RESTAdapter", "FamilyBook.RESTAdapter\FamilyBook.RESTAdapter.csproj", "{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RESTAdapter.Tests", "..\..\Users\Justin\Documents\Visual Studio 2013\Projects\FamilyBook.RESTAdapter\FamilyBook.RESTAdapter.Tests\FamilyBook.RESTAdapter.Tests.csproj", "{E41BF962-83AA-40FB-9205-E45D94EE9CEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BC382C85-9AF3-4F1A-B36B-AE0B47A4F486}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{074B9545-59D3-4FE0-87CA-BF0E9B0B30C6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\FamilyBookRESTAdapter-WAWS-dev.json = PublishScripts\Configurations\FamilyBookRESTAdapter-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.Domain", "FamilyBook.Domain\FamilyBook.Domain.csproj", "{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.SQLAdapter", "FamilyBook.SQLAdapter\FamilyBook.SQLAdapter.csproj", "{72B80564-77B1-4D3A-939B-C2ACFDA251EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RedisAdapter", "FamilyBook.RedisAdapter\FamilyBook.RedisAdapter.csproj", "{A5A52EB8-758E-4F17-9A36-673DFF748B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.AzureStorageAdapter", "FamilyBook.AzureStorageAdapter\FamilyBook.AzureStorageAdapter.csproj", "{6A2E34D0-4158-442C-BB5C-805B1351E687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41BF962-83AA-40FB-9205-E45D94EE9CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41BF962-83AA-40FB-9205-E45D94EE9CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41BF962-83AA-40FB-9205-E45D94EE9CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41BF962-83AA-40FB-9205-E45D94EE9CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{074B9545-59D3-4FE0-87CA-BF0E9B0B30C6} = {BC382C85-9AF3-4F1A-B36B-AE0B47A4F486}
+	EndGlobalSection
+EndGlobal
