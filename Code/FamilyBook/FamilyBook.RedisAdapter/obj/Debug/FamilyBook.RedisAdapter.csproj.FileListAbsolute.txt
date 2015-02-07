@@ -1,0 +1,4 @@
+C:\Code\FamilyBook\FamilyBook.RedisAdapter\bin\Debug\FamilyBook.RedisAdapter.dll
+C:\Code\FamilyBook\FamilyBook.RedisAdapter\bin\Debug\FamilyBook.RedisAdapter.pdb
+C:\Code\FamilyBook\FamilyBook.RedisAdapter\obj\Debug\FamilyBook.RedisAdapter.dll
+C:\Code\FamilyBook\FamilyBook.RedisAdapter\obj\Debug\FamilyBook.RedisAdapter.pdb
