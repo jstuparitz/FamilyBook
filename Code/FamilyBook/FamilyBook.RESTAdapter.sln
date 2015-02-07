@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RESTAdapter", "FamilyBook.RESTAdapter\FamilyBook.RESTAdapter.csproj", "{0B96E4B2-C1DF-42B3-89AA-4BEEF20C2F37}"
 EndProject
@@ -25,6 +25,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RedisAdapter", "FamilyBook.RedisAdapter\FamilyBook.RedisAdapter.csproj", "{A5A52EB8-758E-4F17-9A36-673DFF748B07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.AzureStorageAdapter", "FamilyBook.AzureStorageAdapter\FamilyBook.AzureStorageAdapter.csproj", "{6A2E34D0-4158-442C-BB5C-805B1351E687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.AzureStorageAdapter.IntegrationTests", "FamilyBook.AzureStorageAdapter.IntegrationTests\FamilyBook.AzureStorageAdapter.IntegrationTests.csproj", "{7D4BB87F-B41E-472D-BE1F-B6DE94F6CA2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A2E34D0-4158-442C-BB5C-805B1351E687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4BB87F-B41E-472D-BE1F-B6DE94F6CA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4BB87F-B41E-472D-BE1F-B6DE94F6CA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4BB87F-B41E-472D-BE1F-B6DE94F6CA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4BB87F-B41E-472D-BE1F-B6DE94F6CA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
