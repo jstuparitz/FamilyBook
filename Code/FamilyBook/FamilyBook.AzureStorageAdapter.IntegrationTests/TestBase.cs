@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
@@ -20,11 +19,13 @@ namespace FamilyBook.AzureStorageAdapter.IntegrationTests
         public void Setup()
         {
             //Create a storage account class using the credentials
-            var creds = new StorageCredentials(ConfigurationManager.AppSettings["AccountName"], ConfigurationManager.AppSettings["StorageAccountKey"]);
+            var creds = new StorageCredentials(ConfigurationManager.AppSettings["AccountName"],
+                ConfigurationManager.AppSettings["StorageAccountKey"]);
             var account = new CloudStorageAccount(creds, false);
 
             //Create a storage account using a connection string
-            CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
+            CloudStorageAccount cloudStorageAccount =
+                CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
 
             CloudStorageAccount devStorageAccount = CloudStorageAccount.DevelopmentStorageAccount;
             BlobClient = devStorageAccount.CreateCloudBlobClient();

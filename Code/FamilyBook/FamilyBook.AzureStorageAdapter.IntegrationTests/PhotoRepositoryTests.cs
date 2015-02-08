@@ -15,7 +15,7 @@ namespace FamilyBook.AzureStorageAdapter.IntegrationTests
             byte[] picture =
                 File.ReadAllBytes(@"C:\Code\FamilyBook\FamilyBook.AzureStorageAdapter.IntegrationTests\testimage.jpg");
             IPhotoRepository photoRepository = new PhotoRepository(BlobClient);
-            var photo = new Photo.Photo {Id = Guid.NewGuid(), PhotoImage = picture};
+            var photo = new Photo.Photo {Id = Guid.NewGuid().ToString(), PhotoImage = picture};
 
             //Act
             photoRepository.SavePhoto(photo);

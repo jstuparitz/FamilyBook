@@ -29,7 +29,7 @@ namespace FamilyBook.AzureStorageAdapter.Photo
         public async Task SavePhoto(Photo photo)
         {
             CloudBlobContainer blobContainer = _client.GetContainerReference("1photos");
-            CloudBlockBlob blob = blobContainer.GetBlockBlobReference(photo.Id.ToString());
+            CloudBlockBlob blob = blobContainer.GetBlockBlobReference(photo.Id);
             await blob.UploadFromByteArrayAsync(photo.PhotoImage, 0, photo.PhotoImage.Length);
         }
     }
