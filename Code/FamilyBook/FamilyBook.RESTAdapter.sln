@@ -7,15 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RESTAdapter.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BC382C85-9AF3-4F1A-B36B-AE0B47A4F486}"
 	ProjectSection(SolutionItems) = preProject
-		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		CreateStorage.ps1 = CreateStorage.ps1
 		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{074B9545-59D3-4FE0-87CA-BF0E9B0B30C6}"
-	ProjectSection(SolutionItems) = preProject
-		PublishScripts\Configurations\FamilyBookREST-WAWS-dev.json = PublishScripts\Configurations\FamilyBookREST-WAWS-dev.json
-		PublishScripts\Configurations\FamilyBookRESTAdapter-WAWS-dev.json = PublishScripts\Configurations\FamilyBookRESTAdapter-WAWS-dev.json
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.Domain", "FamilyBook.Domain\FamilyBook.Domain.csproj", "{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}"
 EndProject
@@ -32,6 +28,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9FA3C3DA-3430-4E8C-B060-F042E38FB3AE}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.REST.LoadTests", "FamilyBook.REST.LoadTests\FamilyBook.REST.LoadTests.csproj", "{D3E79AC6-AA12-4102-B7A7-5D9F979DACDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A42A0735-2CE0-4743-A4A5-0002380F96F9}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
 	EndProjectSection
 EndProject
 Global
@@ -68,6 +71,10 @@ Global
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E79AC6-AA12-4102-B7A7-5D9F979DACDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E79AC6-AA12-4102-B7A7-5D9F979DACDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E79AC6-AA12-4102-B7A7-5D9F979DACDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E79AC6-AA12-4102-B7A7-5D9F979DACDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

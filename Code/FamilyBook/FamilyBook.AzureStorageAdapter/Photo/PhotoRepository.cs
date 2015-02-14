@@ -5,7 +5,7 @@ namespace FamilyBook.AzureStorageAdapter.Photo
 {
     public interface IPhotoRepository
     {
-        //void SavePhoto(Photo photo);
+        Task<Photo> FindPhoto(string id);
         Task SavePhoto(Photo photo);
     }
 
@@ -31,6 +31,15 @@ namespace FamilyBook.AzureStorageAdapter.Photo
             CloudBlobContainer blobContainer = _client.GetContainerReference("1photos");
             CloudBlockBlob blob = blobContainer.GetBlockBlobReference(photo.Id);
             await blob.UploadFromByteArrayAsync(photo.PhotoImage, 0, photo.PhotoImage.Length);
+        }
+
+        public async Task<Photo> FindPhoto(string id)
+        {
+            CloudBlobContainer blobContainer = _client.GetContainerReference("1photos");
+            CloudBlockBlob blob = blobContainer.GetBlockBlobReference(id);
+            var photo = new Photo() {Id = id};
+            await blob.DownloadToByteArrayAsync(photo.PhotoImage, 0);
+            return photo;
         }
     }
 }
