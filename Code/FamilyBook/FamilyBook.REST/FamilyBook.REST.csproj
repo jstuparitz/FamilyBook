@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="loaderio-5ed833d55c0b478f8ff0873942c1b02e.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
