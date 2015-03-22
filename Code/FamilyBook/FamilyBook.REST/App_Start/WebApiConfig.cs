@@ -46,14 +46,7 @@ namespace FamilyBook.REST
                 ConfigurationManager.AppSettings["StorageAccountKey"]);
             var account = new CloudStorageAccount(creds, true);
 
-            //Create a storage account using a connection string
-            CloudStorageAccount cloudStorageAccount =
-                CloudStorageAccount.Parse(ConfigurationManager.AppSettings["StorageConnectionString"]);
-            cloudStorageAccount.CreateCloudBlobClient();
-            //string queueEndpointUri = "https://" + ConfigurationManager.AppSettings["AccountName"] + ".blob.core.windows.net";
-            //var uri = new Uri(queueEndpointUri);
-
-            builder.Register(c => cloudStorageAccount.CreateCloudBlobClient()).As<CloudBlobClient>().InstancePerLifetimeScope();
+            builder.Register(c => account.CreateCloudBlobClient()).As<CloudBlobClient>().InstancePerLifetimeScope();
             builder.RegisterHttpRequestMessage(config);
             IContainer container = builder.Build();
 

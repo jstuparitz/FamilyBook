@@ -1,26 +1,30 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 using FamilyBook.AzureStorageAdapter.Photo;
 using NUnit.Framework;
 
 namespace FamilyBook.AzureStorageAdapter.IntegrationTests
 {
     [TestFixture]
-    public class PhotoRepositoryTests : TestBase
+    public class PhotoRepositoryTests
     {
         [Test]
-        public void Test()
+        public async Task Test()
         {
             //Arrange
             byte[] picture =
                 File.ReadAllBytes(@"C:\Code\FamilyBook\FamilyBook.AzureStorageAdapter.IntegrationTests\testimage.jpg");
-            IPhotoRepository photoRepository = new PhotoRepository(BlobClient);
-            var photo = new Photo.Photo {Id = Guid.NewGuid().ToString(), PhotoImage = picture};
+            IPhotoRepository photoRepository = new PhotoRepository(TestClient.BlobClient);
+            var id = Guid.NewGuid().ToString();
+            var photo = new Photo.Photo {Id = id, PhotoImage = picture};
 
             //Act
-            photoRepository.SavePhoto(photo);
+            await photoRepository.SavePhoto(photo);
 
             //Assert
+            var getPhoto = photoRepository.FindPhoto(id);
+            Assert.IsNotEmpty(getPhoto.Result.PhotoImage);
         }
     }
 }

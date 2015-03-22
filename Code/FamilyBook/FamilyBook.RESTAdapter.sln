@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.Domain", "FamilyBook.Domain\FamilyBook.Domain.csproj", "{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.SQLAdapter", "FamilyBook.SQLAdapter\FamilyBook.SQLAdapter.csproj", "{72B80564-77B1-4D3A-939B-C2ACFDA251EA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.RedisAdapter", "FamilyBook.RedisAdapter\FamilyBook.RedisAdapter.csproj", "{A5A52EB8-758E-4F17-9A36-673DFF748B07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.AzureStorageAdapter", "FamilyBook.AzureStorageAdapter\FamilyBook.AzureStorageAdapter.csproj", "{6A2E34D0-4158-442C-BB5C-805B1351E687}"
@@ -35,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Local.testsettings = Local.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyBook.WebJobs", "FamilyBook.WebJobs\FamilyBook.WebJobs.csproj", "{699D878C-71CA-46F6-AF67-B7D14F017CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,10 +49,6 @@ Global
 		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69A62249-8DEA-4E07-971D-AC04B3EAD7EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72B80564-77B1-4D3A-939B-C2ACFDA251EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5A52EB8-758E-4F17-9A36-673DFF748B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +65,10 @@ Global
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{027C982C-2036-42F3-9A91-C1C6786B2C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699D878C-71CA-46F6-AF67-B7D14F017CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699D878C-71CA-46F6-AF67-B7D14F017CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699D878C-71CA-46F6-AF67-B7D14F017CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699D878C-71CA-46F6-AF67-B7D14F017CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
